@@ -1,3 +1,3 @@
-f = open('newfile.txt', 'w')
-f.writelines('World')
+f = open('newfile.txt', 'a')
+f.write('World')
 f.close()
