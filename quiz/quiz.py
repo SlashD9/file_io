@@ -50,6 +50,16 @@ def ask_question():
     # Create a Tuple of questions and answers.
     for question, answer in questions_and_answers:
         guess = input(question + "> ")
+        # if the user guess is the same as the answer
+        if guess == answer:
+            score +=1
+            print("right!")
+            print(score)
+        # if not the same we print it was wrong
+        else:
+            print("wrong!")
+    # When all the questions have been answered we print the final score
+    print("You got {0} correct out of {1}".format(score, number_of_questions))
 
 def game_loop():
     while True:
