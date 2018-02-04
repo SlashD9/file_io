@@ -63,7 +63,8 @@ def ask_question():
     print("You got {0} correct out of {1}".format(score, number_of_questions))
     
 def del_question():
-    print("You have selected Delete Question")
+
+    
 
 def game_loop():
     while True:
