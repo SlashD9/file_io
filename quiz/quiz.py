@@ -1,7 +1,8 @@
 def show_menu():
     print("1. Ask questions")
     print("2. Add a question")
-    print( "3. Exit game")
+    print("3. Delete question")
+    print("4. Exit game")
     
     option = input("Enter option: ")
     return option
@@ -60,6 +61,9 @@ def ask_question():
             print("wrong!")
     # When all the questions have been answered we print the final score
     print("You got {0} correct out of {1}".format(score, number_of_questions))
+    
+def del_question():
+    print("You have selected Delete Question")
 
 def game_loop():
     while True:
@@ -69,6 +73,8 @@ def game_loop():
         elif option == "2":
             add_question()
         elif option == "3":
+            del_question()
+        elif option == "4":
             break
         else:
             print("Invalid Option")
