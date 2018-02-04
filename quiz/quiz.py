@@ -38,8 +38,17 @@ def ask_question():
         else:
             answers.append(text)
     
+    # find out how many questions there are
+    number_of_questions = len(questions)
+    # create a variable to zip(questions, answers)
+    questions_and_answers = zip(questions, answers)
+    
+    # create a score var to calculate the score
+    score = 0
+    
+    
     # Create a Tuple of questions and answers.
-    for question, answer in zip(questions, answers):
+    for question, answer in questions_and_answers:
         guess = input(question + "> ")
 
 def game_loop():
