@@ -46,7 +46,7 @@ def game_loop():
     while True:
         option = show_menu()
         if option == "1":
-            print("You slected 'Ask questions'")
+            ask_question()
         elif option == "2":
             add_question()
         elif option == "3":
